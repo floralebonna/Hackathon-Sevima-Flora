@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compress Image</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <label for="input-file" id="drop-area">
+            <div id="upload_img">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %} 
+                    {{ form.as_p }}
+                    <button type="submit" class="button-compres">Compress Image</button>
+                </form>
+            </div>
+        </label>
+        <div class="hasil_compress">
+            {% if img_up and img_up.image %}
+                <h3>Hasil Compress Gambar : </h3>
+                <img src="{{ img_up.image.url }}" alt="connect" style="max-height: 300px;">
+                <a href="{{  img_up.image.url }}" download class="download-btn">Download Image</a>
+            {% endif %}
+        </div>        
+    </div>
+</body>
+</html>

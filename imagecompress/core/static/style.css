@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(176, 215, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drop-area{
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#upload_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+    background-size: cover;
+    background-position: center;
+}
+
+.hasil_compress{
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    margin-left: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.button-compres {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
