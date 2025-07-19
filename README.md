@@ -34,11 +34,16 @@ imagecompress/
    source venv/bin/activate     # Untuk Linux/Mac
    env\Scripts\activate        # Untuk Windows
   
-4. Jalankan migrasi database
+4. Install package manager
+   ```bash
+   pip install Django
+   pip install Pillow
+   
+5. Jalankan migrasi database
    ```bash
    python manage.py makemigrations
    python manage.py migrate
 
-5. Jalankan server:
+6. Jalankan server:
   ```bash
   python manage.py runserver
