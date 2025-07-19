@@ -13,6 +13,7 @@ Aplikasi untuk mengubah ukuran suatu gambar menggunakan framework Django
 - HTML & CSS (untuk antarmuka)
 - PostgresSQL (database)
 
+## Struktur Folder
 imagecompress/
 ├── manage.py
 ├── imagecompress/ (Konfigurasi proyek Utama)
